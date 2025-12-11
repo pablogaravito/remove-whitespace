@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remove Extra Spaces</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Remove Extra Spaces</h1>
+
+    <div class="container">
+      <!-- Buttons ABOVE both inputs -->
+      <div class="toolbar">
+        <button id="clearBtn">🗑 Clear</button>
+        <button id="copyBtn">📋 Copy Output</button>
+      </div>
+
+      <!-- Input text -->
+      <textarea
+        id="inputText"
+        placeholder="Paste your code or text here..."
+      ></textarea>
+
+      <!-- Process button -->
+      <button id="processBtn">Remove Extra Spaces</button>
+
+      <!-- Output text -->
+      <textarea
+        id="outputText"
+        placeholder="Result will appear here..."
+        readonly
+      ></textarea>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
