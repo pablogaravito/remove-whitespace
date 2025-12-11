@@ -9,29 +9,42 @@
   <body>
     <h1>Remove Extra Spaces</h1>
 
-    <div class="container">
-      <!-- Buttons ABOVE both inputs -->
+    <!-- INPUT SECTION -->
+    <div class="section">
       <div class="toolbar">
-        <button id="clearBtn">🗑 Clear</button>
-        <button id="copyBtn">📋 Copy Output</button>
+        <button class="clearBtn" id="clearInput">🗑 Clear</button>
+        <button class="copyBtn" id="copyInput">📋 Copy</button>
       </div>
 
-      <!-- Input text -->
-      <textarea
-        id="inputText"
-        placeholder="Paste your code or text here..."
-      ></textarea>
+      <textarea id="inputText" placeholder="Paste your code here..."></textarea>
 
-      <!-- Process button -->
-      <button id="processBtn">Remove Extra Spaces</button>
+      <div class="stats" id="inputStats">Size: 0 KB, 0 characters</div>
+    </div>
 
-      <!-- Output text -->
+    <!-- AUTO CHECKBOX -->
+    <div class="autoBox">
+      <label><input type="checkbox" id="autoToggle" /> Auto</label>
+    </div>
+
+    <!-- PROCESS BUTTON -->
+    <button id="processBtn">Remove Extra Spaces</button>
+
+    <!-- OUTPUT SECTION -->
+    <div class="section">
+      <div class="toolbar">
+        <button class="clearBtn" id="clearOutput">🗑 Clear</button>
+        <button class="copyBtn" id="copyOutput">📋 Copy</button>
+      </div>
+
       <textarea
         id="outputText"
-        placeholder="Result will appear here..."
+        placeholder="Output will appear here..."
         readonly
       ></textarea>
+
+      <div class="stats" id="outputStats">Size: 0 KB, 0 characters</div>
     </div>
+
     <script src="app.js"></script>
   </body>
 </html>

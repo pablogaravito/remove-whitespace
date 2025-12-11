@@ -2,19 +2,17 @@ body {
   font-family: Arial, sans-serif;
   background: #f7f7f7;
   padding: 40px;
-  max-width: 900px;
+  max-width: 950px;
   margin: auto;
 }
 
 h1 {
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.section {
+  margin-bottom: 35px;
 }
 
 textarea {
@@ -36,30 +34,50 @@ textarea:focus {
 
 .toolbar {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: -10px;
+  gap: 10px;
+  margin-bottom: 5px;
 }
 
 button {
-  padding: 9px 15px;
+  padding: 7px 14px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
 }
 
-#clearBtn {
+.clearBtn {
   background: #d9534f;
   color: white;
 }
-#copyBtn {
+.copyBtn {
   background: #0275d8;
   color: white;
 }
+
 #processBtn {
   background: #5cb85c;
   color: white;
   width: 200px;
-  align-self: center;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  display: block;
+  margin: 20px auto;
+}
+
+.stats {
+  font-size: 13px;
+  color: #555;
+  margin-top: 4px;
+}
+
+.autoBox {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  user-select: none;
 }
