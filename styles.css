@@ -23,8 +23,8 @@ textarea {
   resize: vertical;
   border-radius: 6px;
   border: 1px solid #ccc;
-  outline: none;
   background: white;
+  outline: none;
   white-space: pre;
 }
 
@@ -35,7 +35,7 @@ textarea:focus {
 .toolbar {
   display: flex;
   gap: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 button {
@@ -74,10 +74,31 @@ button {
   margin-top: 4px;
 }
 
-.autoBox {
+.checkboxes {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 5px;
   font-size: 14px;
   user-select: none;
+}
+
+.checkboxes label {
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+/* Toast notifications */
+#toast {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  padding: 12px 20px;
+  background: #333;
+  color: white;
+  border-radius: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  z-index: 1000;
+  font-size: 14px;
 }

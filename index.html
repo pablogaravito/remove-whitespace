@@ -9,7 +9,9 @@
   <body>
     <h1>Remove Extra Spaces</h1>
 
-    <!-- INPUT SECTION -->
+    <div id="toast"></div>
+
+    <!-- INPUT -->
     <div class="section">
       <div class="toolbar">
         <button class="clearBtn" id="clearInput">🗑 Clear</button>
@@ -21,15 +23,18 @@
       <div class="stats" id="inputStats">Size: 0 KB, 0 characters</div>
     </div>
 
-    <!-- AUTO CHECKBOX -->
-    <div class="autoBox">
+    <!-- AUTO + REMOVE COMMENTS -->
+    <div class="checkboxes">
       <label><input type="checkbox" id="autoToggle" /> Auto</label>
+      <label
+        ><input type="checkbox" id="removeComments" /> Remove comments</label
+      >
     </div>
 
     <!-- PROCESS BUTTON -->
     <button id="processBtn">Remove Extra Spaces</button>
 
-    <!-- OUTPUT SECTION -->
+    <!-- OUTPUT -->
     <div class="section">
       <div class="toolbar">
         <button class="clearBtn" id="clearOutput">🗑 Clear</button>
